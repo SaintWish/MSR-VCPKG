@@ -31,15 +31,12 @@ jobs:
         with:
           cmakeVersion: 3.28.3
 
-      - name: Restore artifacts, setup vcpkg
-        uses: lukka/run-vcpkg@v11
-        with:
-          vcpkgDirectory: '${{ github.workspace }}/vcpkg'
-          runVcpkgInstall: false
-          vcpkgJsonIgnores: "['**/vcpkg/**', '**/vcpkg_config/**', '**/utils/**']"
-
-      - name: Prints output of run-vcpkg's action.
-        run: echo "root='${{ steps.runvcpkg.outputs.RUNVCPKG_VCPKG_ROOT_OUT }}', triplet='${{ steps.runvcpkg.outputs.RUNVCPKG_VCPKG_DEFAULT_TRIPLET_OUT }}' "
+      # - name: Restore artifacts, setup vcpkg
+      #   uses: lukka/run-vcpkg@v11
+      #   with:
+      #     vcpkgDirectory: '${{ github.workspace }}/vcpkg'
+      #     runVcpkgInstall: false
+      #     vcpkgJsonIgnores: "['**/vcpkg/**', '**/vcpkg_config/**', '**/utils/**']"
       
       - name: Configure CMake
         run: > 
