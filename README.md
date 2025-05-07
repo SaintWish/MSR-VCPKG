@@ -24,3 +24,5 @@ Please see the [Valve Dev Wiki](https://developer.valvesoftware.com/wiki/Source_
 
 ## Contributing
 Have a look at the open Github issues that aren't assigned [here](https://github.com/MSRevive/MasterSwordRebirth/issues), or feel free to join our [Discord](https://discord.gg/nwJB9EhAN6) to ask how to contribute further.
+
+-
