@@ -16,7 +16,8 @@ Currently the project relies on C++14, but we do plan on upgrading to a newer ve
 * `sudo dpkg --add-architecture i386`
 * `sudo add-apt-repository ppa:ubuntu-toolchain-r/test`
 * `sudo apt update`
-* `sudo apt install -y g++-11-multilib libgcc-s1:i386 libstdc++6:i386 libatomic1:i386 libgl1-mesa-dev:i386`
+* `sudo apt install -y g++-11-multilib libgcc-s1:i386 libstdc++6:i386 libatomic1:i386 libgl1-mesa-dev:i386 pkg-config`
+* `sudo apt install -y gcc-i686-linux-gnu g++-i686-linux-gnu` - https://github.com/microsoft/vcpkg/issues/45472
 * `./build-linux.sh`
 
 ## Troubleshooting
